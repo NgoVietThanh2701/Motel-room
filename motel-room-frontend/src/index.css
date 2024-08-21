@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap');
+
+@layer base {
+   html {
+      font-family: 'Titillium Web', sans-serif;
+   }
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+   -webkit-appearance: none;
+   height: 6px;
+}
+
+input[type='range']::-moz-range-track {
+   -moz-appearance: none;
+   height: 6px;
+}
+
+input[type='range']::-ms-track {
+   appearance: none;
+   height: 6px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   width: 1.8rem;
+   height: 1.8rem;
+   background: white;
+   border-radius: 50%;
+   border: solid 1.5px #ccc;
+   margin-top: -0.5em;
+   pointer-events: auto;
+   cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb:active {
+   border: solid 1.5px rgb(44, 44, 231);
+}
+
+input[type='range']::-ms-thumb {
+   appearance: none;
+   width: 1.8rem;
+   height: 1.8rem;
+   background: white;
+   border-radius: 50%;
+   border: solid 1.5px #ccc;
+   margin-top: -0.5rem;
+   pointer-events: auto;
+   cursor: pointer;
+}
+
+input[type='range']::-ms-thumb:active {
+   border: solid 1.5px rgb(44, 44, 231);
+}
+
+input[type='range']::-moz-range-thumb {
+   -moz-appearance: none;
+   width: 1.8rem;
+   height: 1.8rem;
+   background: white;
+   border-radius: 50%;
+   border: solid 1.5px #ccc;
+   margin-top: -0.5rem;
+   pointer-events: auto;
+   cursor: pointer;
+}
+
+input[type='range']::-moz-range-thumb:active {
+   border: solid 1.5px rgb(44, 44, 231);
+}
